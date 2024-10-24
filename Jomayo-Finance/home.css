@@ -1,0 +1,680 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #2d2d45;
+}
+body a {
+  text-decoration: none;
+}
+.main {
+  display: flex;
+}
+.bodyDash {
+  margin-top: 6rem;
+}
+.sidenav {
+  border: 1px solid black;
+  height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #ffffff;
+  font-size: 13px;
+  position: fixed;
+  padding-top: 30px;
+  perspective: 1000;
+  z-index: 20;
+}
+.sidenav a {
+  color: black;
+  text-decoration: none;
+}
+.sidenav p {
+  margin-bottom: 1.5rem;
+}
+.sidenav p a {
+  text-decoration: none;
+}
+.sidenav img {
+  margin-bottom: 20px;
+}
+.dashboardCont {
+  display: flex;
+}
+.dashboardCont a:hover {
+  color: green;
+}
+.dashboardCont i:hover {
+  color: green;
+}
+.dashboardCont div:nth-child(2) {
+  margin-left: 10px;
+}
+.dashboardCont div:nth-child(3) {
+  margin-left: 10px;
+}
+.navContents {
+  padding: 1.5rem;
+}
+.navContents ul {
+  list-style: none;
+}
+.navContents ul li {
+  margin-bottom: 1.5rem;
+}
+.navContents a:hover {
+  color: green;
+}
+
+/* MAIN BODY */
+.mainBody {
+  color: white;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 2rem;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  perspective: 1000;
+  z-index: 10;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  color: #04e704;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropbtn {
+  border: none;
+  padding: 6px;
+  background-color: #454569;
+  color: white;
+}
+.mainBody nav {
+  display: flex;
+  font-size: 13px;
+  width: 90vw;
+  background-color: #454569;
+  padding: 1rem;
+  margin-left: 10rem;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  perspective: 1000;
+  z-index: 10;
+}
+.profile {
+  display: flex;
+}
+.emptyInNav {
+  width: 43rem;
+}
+.hamburger i {
+  font-size: 15px;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+.searchBar input {
+  padding: 6px;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.searchBar button {
+  border: none;
+  padding: 6px;
+}
+.fa-bell {
+  margin-right: 10px;
+  font-size: 15px;
+}
+.fa-bell:hover {
+  color: #0bca0b;
+  cursor: pointer;
+}
+.fa-gear {
+  margin-right: 19px;
+  font-size: 15px;
+}
+.fa-gear:hover {
+  color: #0bca0b;
+  cursor: pointer;
+}
+.profile {
+  display: flex;
+  margin-top: 5px;
+}
+.profile div:first-child {
+  margin-right: 10px;
+  margin-top: -10px;
+}
+.profile2 {
+  margin-top: 2px;
+}
+.fa-user {
+  font-size: 15px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: white;
+  color: rgb(151, 151, 151);
+}
+main {
+  margin-left: 10rem;
+  padding: 10px;
+  padding-left: 40px;
+}
+.currentSpend {
+  background-color: rgb(246, 252, 247);
+  color: black;
+  width: fit-content;
+  padding: 25px;
+  border-radius: 20px;
+  margin-right: 7cqw;
+  height: fit-content;
+}
+.amountSpent {
+  display: flex;
+  width: 34vw;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.moreMoney {
+  font-size: small;
+  width: 115px;
+  margin-top: -5px;
+}
+main div h4 {
+  padding: 10px;
+  font-size: x-large;
+}
+.currentSpendLink {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#currentSpendLink {
+  text-decoration: none;
+  color: black;
+}
+.bankInfo a {
+  color: black;
+}
+.bankInfo p {
+  display: flex;
+  width: 34vw;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid black;
+  color: black;
+  background-color: #ffffff;
+  font-size: 17px;
+}
+.bankInfo p:hover {
+  background-color: rgb(203, 201, 201);
+}
+.bankInfo p:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* TOP HALF */
+.topHalf {
+  display: flex;
+}
+.topHalf div:nth-child(2) h2 {
+  margin-bottom: 15px;
+  margin-left: 5px;
+  border-bottom: 3px solid white;
+  width: 200px;
+}
+
+.spendLocation {
+  margin-top: 20px;
+}
+.spendLocation p span:first-child {
+  position: relative;
+  bottom: 170px;
+  left: 70px;
+}
+.spendLocation p span:nth-child(2) {
+  position: relative;
+  bottom: 100px;
+  left: 170px;
+}
+.spendLocation p span:nth-child(3) {
+  position: relative;
+  bottom: 80px;
+  left: 70px;
+}
+.spendLocation p span:nth-child(4) {
+  position: relative;
+  bottom: 180px;
+  left: 270px;
+}
+.spendLocation p span:nth-child(5) {
+  position: relative;
+  bottom: 50px;
+  left: 270px;
+}
+
+.map {
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.spendCity p {
+  display: flex;
+  width: 34vw;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid black;
+  color: black;
+  background-color: #ffffff;
+  font-size: 17px;
+}
+.spendCity p:hover {
+  background-color: rgb(203, 201, 201);
+}
+.spendCity p:nth-child(3) {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* UPCOMING PAY */
+.upcomingPay {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 500px;
+  /* border: 1px solid black; */
+}
+.upcomingPay span {
+  text-align: center;
+}
+.upcomingPay span img {
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 4px;
+}
+.upcomingPrices {
+  margin-top: 2px;
+  width: 500px;
+  /* border: 1px solid black; */
+}
+.upcomingPrices span {
+  text-align: center;
+  font-size: 12px;
+  width: 80px;
+}
+nav {
+  position: fixed;
+}
+.recentTran {
+  display: flex;
+  width: 520px;
+  padding: 15px;
+  justify-content: space-between;
+  background-color: #e8e3e3;
+  border-bottom: 1px solid black;
+  color: black;
+}
+.rT1 {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.rTfin {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.recentTranMain {
+  display: flex;
+}
+.recentTranMain div img {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.spentorGotten {
+  margin-top: 10px;
+}
+.recentTranCover {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-circle-check {
+  color: green;
+  margin-top: 13px;
+}
+.pending {
+  color: red;
+  margin-top: 13px;
+}
+#recentTran1 {
+  border-bottom: 3px solid white;
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+/* NEWS CAROUSEL */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 500px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slide {
+  margin-left: 120px;
+  margin-top: 90px;
+}
+ul {
+  list-style: none;
+}
+.footCover {
+  display: flex;
+  margin-left: 10.1rem;
+  padding: 10rem;
+  padding-left: 12rem;
+  padding-right: 14rem;
+  background-color: #454569;
+  color: white;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.footCover li {
+  padding: 12px;
+  margin-left: -11px;
+}
+.footCover h3 {
+  padding-bottom: 7px;
+}
+.footCover li a {
+  color: white;
+  font-size: 15px;
+}
+.footCover li a:hover {
+  color: #717171;
+}
+.dropdown11 {
+  position: relative;
+  top: 64px;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-left: 9.9rem;
+  background-color: white;
+  color: black;
+  width: 89vw;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 160px;
+  padding-right: 160px;
+  /* perspective: 1000; */
+  /* z-index: 20; */
+  position: fixed;
+  display: none;
+}
+.hamburger {
+  cursor: pointer;
+}
+
+.dropdown11 {
+  /* display: none; */
+  /* background-color: #f9f9f9; */
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  /* padding: 12px 16px; */
+  /* position: absolute; */
+  /* top: 50px; */
+  /* right: 10px; */
+  /* z-index: 1; */
+}
+
+.dropdown11 a {
+  color: black;
+  /* padding: 8px 16px; */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown11 a:hover {
+  /* background-color: #f1f1f1; */
+  color: green;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+bodyDash {
+  margin-bottom: 20px;
+}
+
+bodyDash h4 {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+/* Specific Styles for Spending Page */
+.spendingContent {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  color: black;
+}
+
+.spendingSummary ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.spendingSummary ul li {
+  margin-bottom: 5px;
+}
+
+.spendingChart img {
+  display: block;
+  margin: 20px 0;
+}
+
+.spendingTips ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Specific Styles for Transactions Page */
+.transactionsContent table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  color: black;
+}
+
+.transactionsContent table, .transactionsContent th, .transactionsContent td {
+  border: 1px solid #ddd;
+}
+
+.transactionsContent th, .transactionsContent td {
+  padding: 12px;
+  text-align: left;
+}
+
+.transactionsContent th {
+  background-color: #f1f1f1;
+}
+
+.transactionFilters form {
+  margin: 20px 0;
+}
+
+.transactionFilters label {
+  margin-right: 10px;
+}
+
+.transactionFilters button {
+  padding: 5px 10px;
+}
+
+/* Specific Styles for Chat Page */
+.chatContent {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  color: black;
+}
+
+.chatWindow {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.chatMessage {
+  margin-bottom: 10px;
+}
+
+.chatUser {
+  font-weight: bold;
+}
+
+.chatText {
+  margin-top: 5px;
+}
+
+.userMessage .chatText {
+  background-color: #e1ffc7;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.chatInput {
+  display: flex;
+}
+
+.chatInput input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.chatInput button {
+  padding: 10px 20px;
+  background-color: #0bca0b;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.foot1 {
+  padding-top: 20px;
+}

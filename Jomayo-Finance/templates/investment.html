@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Recommendations</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Investment Recommendations</h1>
+        <form id="investment-form">
+            <label for="amount">Enter Amount to Invest:</label>
+            <input type="number" id="amount" name="amount" required>
+            <label for="symbols">Select Stock Symbols:</label>
+            <select id="symbols" name="symbols" multiple required>
+                <option value="AAPL">Apple (AAPL)</option>
+                <option value="GOOGL">Alphabet (GOOGL)</option>
+                <option value="AMZN">Amazon (AMZN)</option>
+                <option value="TSLA">Tesla (TSLA)</option>
+            </select>
+            <button type="submit">Get Recommendations</button>
+        </form>
+        <div id="recommendations" class="hidden">
+            <h2>Investment Plan</h2>
+            <div id="plans"></div>
+        </div>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
